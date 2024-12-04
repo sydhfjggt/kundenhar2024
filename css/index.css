@@ -1,0 +1,56 @@
+#wrapper{
+    display: grid;
+    grid-template-columns: 40% 20% ;
+    grid-template-rows: 10% 25% 30% 20%  ;
+    height: 150vh;
+    width: 100%;
+    gap: 5px;
+    grid-template-areas: 
+    'hd hd hd nv'
+    'sc1 sc1 sc1 sc1'
+    'sc2 sc2 sc2 sc2'
+    'sc3 sc3 sc3 sc3'
+    'ft ft ft ft'
+    ;
+}
+
+header{
+    grid-area: hd;
+    background-color: #2ecc71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    
+}
+
+nav{
+    grid-area: nv;
+    background-color: blue;
+}
+
+#section1{
+    grid-area: sc1;
+    background-image: url(../img/code.jpg);
+    background-size: cover;
+
+}
+
+#section2{
+    grid-area: sc2;
+    background-color: #2ecc71;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#section3{
+    grid-area: sc3;
+    background-color: orangered;
+}
+
+footer{
+    grid-area: ft;
+    background-color: seashell;
+}
+
