@@ -1,12 +1,13 @@
 #wrapper{
     display: grid;
-    grid-template-columns: 40% 20% ;
-    grid-template-rows: 10% 25% 30% 20%  ;
-    height: 150vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 10% 25% 10% 15% 15%;
+    height: 140vh;
     width: 100%;
     gap: 5px;
     grid-template-areas: 
-    'hd hd hd nv'
+    'nv nv nv nv'
+    'hd hd hd hd'
     'sc1 sc1 sc1 sc1'
     'sc2 sc2 sc2 sc2'
     'sc3 sc3 sc3 sc3'
@@ -26,7 +27,23 @@ header{
 
 nav{
     grid-area: nv;
-    background-color: blue;
+    background-color: white;
+    display: flex;
+}
+
+nav a{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #2ecc71;
+}
+
+nav a:hover{
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
 }
 
 #section1{
@@ -36,21 +53,35 @@ nav{
 
 }
 
-#section2{
-    grid-area: sc2;
-    background-color: #2ecc71;
+section{
+    background-color: white;
     display: flex;
-    justify-content: space-evenly;
+}
 
+#section2 a{
+    grid-area: sc2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+section a:hover{
+  background-color: #2ecc71;
+  color: white;
+  text-decoration: none;
 }
 
 #section3{
     grid-area: sc3;
-    background-color: orangered;
+    background-color: #2ecc71;
 }
 
 footer{
     grid-area: ft;
-    background-color: seashell;
+    background-color: black;
+    color:white;
 }
 
