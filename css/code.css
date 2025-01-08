@@ -1,7 +1,7 @@
 #wrapper2 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 8% 10% 25% 10% 15% 15%;
+    grid-template-rows: 8% 10% 25% 10% ;
     height: 140vh;
     width: 100%;
     gap: 5px;
@@ -78,19 +78,21 @@ section a:hover{
 #section3{
     grid-area: sc3;
     background-color: #2ecc71;
+    padding: 5px;
 }
 
 footer{
     grid-area: ft;
     background-color: black;
     color:white;
+    text-align: center;
 }
 
 
 #wrapper3 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-rows: 8% 10% 35% 25%  ;
     height: 100vh;
     width: 100%;
     gap: 5px;
@@ -123,9 +125,10 @@ footer{
     background-color: #2ecc71;
     color: white;
     text-decoration: none;
+}
 
 
-#hd1{
+#header2 {
     grid-area: hd1;
     background-color: #2ecc71;
     display: flex;
@@ -137,24 +140,22 @@ footer{
 
 #sectionA{
     grid-area: scA;
-    background-image: url(../img/code.jpg);
-    background-size: cover;
-
+    background-image: url(../img/working.avif);
+    background-size:200px;
+    
 }
 
 #sectionB {
     grid-area: scB;
-    flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    text-decoration: none;
+    background-color: #2ecc71;
 }
 
-#ft1{
+
+#ft1 {
     grid-area: ft1;
     background-color: black;
-    color:white;
+    text-align: center;
+    align-items: center;
 }
 
